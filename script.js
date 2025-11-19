@@ -1,8 +1,16 @@
-// script.js for Fitovit Landing
+// script.js
 
-function contactWhatsApp(product) {
-  const phone = "57313785499"; // Cambia este número si deseas otro
-  const message = encodeURIComponent(`Hola, quiero más información sobre el producto: ${product}`);
+// Función para redirigir a WhatsApp con mensaje personalizado
+function contactWhatsApp(productName) {
+  const phone = "57313785499"; // Tu número (sin el +)
+  const message = encodeURIComponent(`Hola, estoy interesado en la oferta de ${productName} que vi en la página web. ¿Me das más info?`);
   const url = `https://wa.me/${phone}?text=${message}`;
   window.open(url, '_blank');
 }
+
+// Toggle Theme (Opcional si quieres mantenerlo)
+const toggleBtn = document.getElementById('theme-toggle');
+toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
