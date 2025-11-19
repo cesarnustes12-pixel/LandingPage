@@ -1,66 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vital Solution</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitovit - Suplementos Naturales</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <img src="images/logo-placeholder.svg" alt="Logotipo de Vital Solution" class="logo">
-            <nav class="main-nav">
-                <a href="#about">Acerca</a>
-                <a href="#services">Servicios</a>
-                <a href="#contact">Contacto</a>
-            </nav>
-        </div>
+    <!-- Toggle Light/Dark -->
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+    <header class="hero">
+        <h1>Fitovit</h1>
+        <p>Suplementos naturales para un bienestar real</p>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-inner container">
-                <div class="hero-text">
-                    <h1>Bienvenido a Vital Solution</h1>
-                    <p>Tu salud, nuestra prioridad. Soluciones integrales y consultas en línea.</p>
-                    <a href="#services" class="btn-primary">Ver servicios</a>
-                </div>
-                <div class="hero-media">
-                    <img src="images/hero-placeholder.svg" alt="Imagen principal" />
-                </div>
+    <section class="beneficios section">
+        <h2>Beneficios de Nuestros Suplementos</h2>
+        <ul>
+            <li><strong>Energía & Vitalidad</strong> – Fórmulas naturales premium.</li>
+            <li><strong>Salud Intestinal</strong> – Probióticos con alta concentración.</li>
+            <li><strong>Piel, Cabello y Uñas</strong> – Biotina y colágeno hidrolizado.</li>
+            <li><strong>Relajación & Sueño</strong> – Magnesio para la calidad del descanso.</li>
+        </ul>
+    </section>
+
+    <section class="productos section">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="images/probioticos.png" alt="Probióticos" />
+                <h3>Probióticos</h3>
+                <p>Mejora la salud intestinal y fortalece el sistema inmune.</p>
             </div>
-        </section>
+            <div class="producto-card">
+                <img src="images/biotina.png" alt="Biotina" />
+                <h3>Biotina</h3>
+                <p>Fortalece cabello, uñas y piel.</p>
+            </div>
+            <div class="producto-card">
+                <img src="images/magnesio.png" alt="Magnesio" />
+                <h3>Magnesio</h3>
+                <p>Reduce estrés, mejora el sueño y la energía.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="about" class="container">
-            <h2>Sobre nosotros</h2>
-            <p>Vital Solution se dedica a ofrecer las mejores soluciones de salud para ti y tu familia. Trabajamos con profesionales certificados para entregarte planes personalizados.</p>
-        </section>
+    <section class="testimonios section">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <blockquote>"Descanso mejor y me siento con más energía." — Ana M.</blockquote>
+        <blockquote>"Mi cabello está más fuerte en un mes." — Laura G.</blockquote>
+        <blockquote>"Los probioticos ayudaron mi digestión." — Daniel R.</blockquote>
+    </section>
 
-        <section id="services" class="container services">
-            <h2>Nuestros servicios</h2>
-            <ul class="services-list">
-                <li>
-                    <img src="images/probioticos.jpg" alt="service 1">
-                    <h3>Asistencia médica 24/7</h3>
-                    <p>Atención continua para emergencias y seguimiento médico.</p>
-                </li>
-                <li>
-                    <img src="images/biotina.jpg" alt="service 2">
-                    <h3>Planes de salud personalizados</h3>
-                    <p>Planes hechos a la medida según tus necesidades y tu historial clínico.</p>
-                </li>
-                <li>
-                    <img src="images/magnesio.jpg" alt="service 3">
-                    <h3>Consultas en línea</h3>
-                    <p>Consultas por video con especialistas certificados.</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Contáctanos: info@vitalsolution.com</p>
+    <section class="faq section">
+        <h2>Preguntas Frecuentes</h2>
+        <details>
+            <summary>¿Los suplementos tienen registro Invima?</summary>
+            <p>Sí, todos cuentan con registro vigente.</p>
+        </details>
+        <details>
+            <summary>¿Cuánto tarda el envío?</summary>
+            <p>Entre 1 y 3 días hábiles.</p>
+        </details>
+        <details>
+            <summary>¿Puedo pagar contra entrega?</summary>
+            <p>Sí, disponible en la mayoría de ciudades.</p>
+        </details>
+    </section>
+
+    <footer class="footer section">
+        <h2>Contacto</h2>
+        <a class="whatsapp-btn" href="https://wa.me/573137774871" target="_blank">
+            <img src="images/whatsapp-icon.svg" alt="WhatsApp" />
+            Chatear por WhatsApp
+        </a>
+        <p class="copy">© 2025 Fitovit. Bienestar Natural.</p>
     </footer>
-    <script src="script.js"></script>
+
+<script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+        document.body.classList.toggle('light');
+        toggle.textContent = document.body.classList.contains('light') ? '☀️' : '🌙';
+    });
+</script>
+
 </body>
 </html>

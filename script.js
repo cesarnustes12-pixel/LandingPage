@@ -1,12 +1,8 @@
-// Basic interactivity: smooth scroll for anchor links and simple console log
-console.log('Welcome to Vital Solution!');
+// script.js for Fitovit Landing
 
-document.addEventListener('DOMContentLoaded', function(){
-	document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
-		anchor.addEventListener('click', function(e){
-			e.preventDefault();
-			var target = document.querySelector(this.getAttribute('href'));
-			if(target) target.scrollIntoView({behavior:'smooth'});
-		});
-	});
-});
+function contactWhatsApp(product) {
+  const phone = "57313785499"; // Cambia este número si deseas otro
+  const message = encodeURIComponent(`Hola, quiero más información sobre el producto: ${product}`);
+  const url = `https://wa.me/${phone}?text=${message}`;
+  window.open(url, '_blank');
+}
