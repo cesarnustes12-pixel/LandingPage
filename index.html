@@ -7,26 +7,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Vital Solution</h1>
-        <p>Your health, our priority.</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <img src="images/logo-placeholder.svg" alt="Logotipo de Vital Solution" class="logo">
+            <nav class="main-nav">
+                <a href="#about">Acerca</a>
+                <a href="#services">Servicios</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Vital Solution is dedicated to providing the best healthcare solutions for you and your family.</p>
+        <section class="hero">
+            <div class="hero-inner container">
+                <div class="hero-text">
+                    <h1>Bienvenido a Vital Solution</h1>
+                    <p>Tu salud, nuestra prioridad. Soluciones integrales y consultas en línea.</p>
+                    <a href="#services" class="btn-primary">Ver servicios</a>
+                </div>
+                <div class="hero-media">
+                    <img src="images/hero-placeholder.svg" alt="Imagen principal" />
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Our Services</h2>
-            <ul>
-                <li>24/7 Medical Assistance</li>
-                <li>Personalized Health Plans</li>
-                <li>Online Consultations</li>
+
+        <section id="about" class="container">
+            <h2>Sobre nosotros</h2>
+            <p>Vital Solution se dedica a ofrecer las mejores soluciones de salud para ti y tu familia. Trabajamos con profesionales certificados para entregarte planes personalizados.</p>
+        </section>
+
+        <section id="services" class="container services">
+            <h2>Nuestros servicios</h2>
+            <ul class="services-list">
+                <li>
+                    <img src="images/probioticos.jpg" alt="service 1">
+                    <h3>Asistencia médica 24/7</h3>
+                    <p>Atención continua para emergencias y seguimiento médico.</p>
+                </li>
+                <li>
+                    <img src="images/biotina.jpg" alt="service 2">
+                    <h3>Planes de salud personalizados</h3>
+                    <p>Planes hechos a la medida según tus necesidades y tu historial clínico.</p>
+                </li>
+                <li>
+                    <img src="images/magnesio.jpg" alt="service 3">
+                    <h3>Consultas en línea</h3>
+                    <p>Consultas por video con especialistas certificados.</p>
+                </li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>Contact us: info@vitalsolution.com</p>
+        <p>Contáctanos: info@vitalsolution.com</p>
     </footer>
     <script src="script.js"></script>
 </body>
