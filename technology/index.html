@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMC Tech - Innovación</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">CMC Tech</a>
+
+            <a href="../index.html" class="btn-nav">Volver al Inicio</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge-new">Nueva Colección</span>
+            <h1>Tecnología <br> <span class="text-highlight">Del Futuro</span></h1>
+            <p>Gadgets innovadores para facilitar tu vida. Calidad, diseño y funcionalidad en un solo lugar.</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn-primary">Ver Gadgets</a>
+                <a href="#videos" class="btn-secondary">Reviews</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://placehold.co/400x400/001f3f/39CCCC?text=Tech+Gear" alt="Tech Gear" style="max-width: 100%; border-radius: 12px; box-shadow: 0 0 20px rgba(0,255,255,0.2);">
+        </div>
+    </header>
+
+    <section id="productos" class="section">
+        <h2>Catálogo Tech</h2>
+        <p class="section-subtitle">Última tecnología al mejor precio (Mínimo 7 productos)</p>
+        
+        <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="producto-card">
+                <div class="badge-offer">Top Ventas</div>
+                <img src="https://placehold.co/300x300/f0f4f8/0074D9?text=Smartwatch" alt="Smartwatch">
+                <h3>Smartwatch Pro</h3>
+                <p class="desc">Monitoreo de salud, notificaciones y batería de larga duración.</p>
+                <div class="price-container">
+                    <span class="old-price">$150.000</span>
+                    <span class="new-price">$120.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Smartwatch Pro')" class="btn-buy">Comprar</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto-card">
+                <img src="https://placehold.co/300x300/f0f4f8/0074D9?text=Audífonos" alt="Audífonos">
+                <h3>Audífonos Inalámbricos</h3>
+                <p class="desc">Cancelación de ruido y sonido Hi-Fi envolvente.</p>
+                <div class="price-container">
+                    <span class="old-price">$90.000</span>
+                    <span class="new-price">$75.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Audífonos')" class="btn-buy">Comprar</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card">
+                <img src="https://placehold.co/300x300/f0f4f8/0074D9?text=Power+Bank" alt="Power Bank">
+                <h3>Power Bank 20000mAh</h3>
+                <p class="desc">Carga rápida para todos tus dispositivos en cualquier lugar.</p>
+                <div class="price-container">
+                    <span class="new-price">$55.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Power Bank')" class="btn-buy">Comprar</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card">
+                <img src="https://placehold.co/300x300/f0f4f8/0074D9?text=Camara" alt="Cámara Deportiva">
+                <h3>Cámara Deportiva 4K</h3>
+                <p class="desc">Graba tus aventuras en ultra alta definición. Incluye accesorios.</p>
+                <div class="price-container">
+                    <span class="old-price">$250.000</span>
+                    <span class="new-price">$199.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Cámara Deportiva')" class="btn-buy">Comprar</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto-card">
+                <img src="https://placehold.co/300x300/f0f4f8/0074D9?text=Aro+Luz" alt="Aro de Luz">
+                <h3>Aro de Luz LED</h3>
+                <p class="desc">Iluminación profesional para tus streams y fotos.</p>
+                <div class="price-container">
+                    <span class="new-price">$85.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Aro de Luz')" class="btn-buy">Comprar</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto-card">
+                <img src="https://placehold.co/300x300/f0f4f8/0074D9?text=Tripode" alt="Trípode">
+                <h3>Trípode Flexible</h3>
+                <p class="desc">Estabilidad para tu celular o cámara en cualquier superficie.</p>
+                <div class="price-container">
+                    <span class="new-price">$30.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Trípode')" class="btn-buy">Comprar</button>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="producto-card">
+                <div class="badge-offer">Gamer</div>
+                <img src="https://placehold.co/300x300/f0f4f8/0074D9?text=Teclado" alt="Teclado Gamer">
+                <h3>Teclado Mecánico RGB</h3>
+                <p class="desc">Switches azules y luces personalizables para gaming.</p>
+                <div class="price-container">
+                    <span class="old-price">$180.000</span>
+                    <span class="new-price">$140.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Teclado RGB')" class="btn-buy">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Videos Tech -->
+    <section id="videos" class="section">
+        <h2>Reviews y Unboxing</h2>
+        <p class="section-subtitle">Mira nuestros productos en acción</p>
+        <div class="videos-grid">
+            <div class="video-card">
+                <div class="video-wrapper">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h3>Review Smartwatch Pro</h3>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h3>Test de Audio Audífonos</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3>CMC Tech</h3>
+        <p>Innovación a tu alcance.</p>
+        <p class="copy">© 2025 CMC Distribuciones. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/57313785499" class="whatsapp-float" target="_blank">
+        <img src="../images/whatsapp-icon.svg" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

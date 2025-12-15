@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMC Salud - Línea Fitovit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">CMC Salud</a>
+
+            <a href="../index.html" class="btn-nav">Volver al Inicio</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge-new">Línea Natural</span>
+            <h1>Cuida tu Cuerpo <br> <span class="text-gold">Vive Mejor</span></h1>
+            <p>Suplementos premium seleccionados para potenciar tu salud diaria. Calidad garantizada.</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn-primary">Ver Catálogo</a>
+                <a href="#videos" class="btn-secondary">Ver Videos</a>
+            </div>
+        </div>
+        <!-- Using existing image for consistency -->
+        <div class="hero-image">
+            <img src="../images/probioticos.png" alt="Salud Fitovit" style="max-width: 300px;">
+        </div>
+    </header>
+
+    <section id="productos" class="section">
+        <h2>Catálogo de Salud</h2>
+        <p class="section-subtitle">Nuestros mejores suplementos para ti (Mínimo 7 productos)</p>
+        
+        <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="producto-card">
+                <div class="badge-offer">¡Más Vendido!</div>
+                <img src="../images/probioticos.png" alt="Probióticos">
+                <h3>Gomitas Probióticos</h3>
+                <p class="desc">Salud intestinal y defensas al máximo. Sin azúcar.</p>
+                <div class="price-container">
+                    <span class="old-price">$90.000</span>
+                    <span class="new-price">$65.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Probióticos')" class="btn-buy">Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto-card">
+                <img src="../images/biotina.png" alt="Biotina">
+                <h3>Biotina + Colágeno</h3>
+                <p class="desc">Cabello fuerte y piel radiante en 30 días.</p>
+                <div class="price-container">
+                    <span class="old-price">$85.000</span>
+                    <span class="new-price">$60.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Biotina')" class="btn-buy">Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card">
+                <img src="../images/magnesio.png" alt="Magnesio">
+                <h3>Citrato de Magnesio</h3>
+                <p class="desc">Adiós al estrés y mejora tu sueño nocturno.</p>
+                <div class="price-container">
+                    <span class="old-price">$80.000</span>
+                    <span class="new-price">$55.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Magnesio')" class="btn-buy">Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card">
+                <img src="https://placehold.co/200x200/e8f5ef/1E4635?text=Omega+3" alt="Omega 3">
+                <h3>Omega 3 Premium</h3>
+                <p class="desc">Salud cardiovascular y cerebral. Alta pureza.</p>
+                <div class="price-container">
+                    <span class="old-price">$75.000</span>
+                    <span class="new-price">$50.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Omega 3')" class="btn-buy">Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto-card">
+                <img src="https://placehold.co/200x200/e8f5ef/1E4635?text=Vit+C" alt="Vitamina C">
+                <h3>Vitamina C + Zinc</h3>
+                <p class="desc">Refuerza tu sistema inmune rápidamente.</p>
+                <div class="price-container">
+                    <span class="old-price">$40.000</span>
+                    <span class="new-price">$30.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Vitamina C')" class="btn-buy">Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto-card">
+                <img src="https://placehold.co/200x200/e8f5ef/1E4635?text=Colageno" alt="Colágeno">
+                <h3>Colágeno Hidrolizado</h3>
+                <p class="desc">Para articulaciones fuertes y piel joven.</p>
+                <div class="price-container">
+                    <span class="old-price">$95.000</span>
+                    <span class="new-price">$70.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Colágeno Polvo')" class="btn-buy">Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="producto-card">
+                <div class="badge-offer">Nuevo</div>
+                <img src="https://placehold.co/200x200/e8f5ef/1E4635?text=Multivit" alt="Multivitamínico">
+                <h3>Multivitamínico Mujer</h3>
+                <p class="desc">Energía y balance hormonal diario.</p>
+                <div class="price-container">
+                    <span class="old-price">$60.000</span>
+                    <span class="new-price">$45.000</span>
+                </div>
+                <button onclick="contactWhatsApp('Multivitamínico')" class="btn-buy">Pedir por WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Videos Explicativos -->
+    <section id="videos" class="section">
+        <h2>Conoce Más</h2>
+        <p class="section-subtitle">Videos explicativos sobre nuestros productos y beneficios</p>
+        <div class="videos-grid">
+            <div class="video-card">
+                <div class="video-wrapper">
+                   <!-- Placeholder video -->
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h3>Beneficios de los Probióticos</h3>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h3>¿Por qué tomar Magnesio?</h3>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h3>Rutina de Mañana Saludable</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3>CMC Salud</h3>
+        <p>Tu aliado natural.</p>
+        <p class="copy">© 2025 CMC Distribuciones. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/57313785499" class="whatsapp-float" target="_blank">
+        <img src="../images/whatsapp-icon.svg" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

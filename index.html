@@ -3,175 +3,67 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitovit - Suplementos Premium</title>
+    <title>CMC Distribuciones - Elige tu Mundo</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Preload Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Fitovit</div>
-            <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
-            <a href="#productos" class="btn-nav">Ver Ofertas</a>
-        </div>
+        <div class="logo">CMC DISTRIBUCIONES</div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <span class="badge-new">Nueva Fórmula Mejorada</span>
-            <h1>Salud y Vitalidad <br> <span class="text-gold">Al Alcance de Ti</span></h1>
-            <p>Descubre el poder de los probióticos, biotina y magnesio. Suplementos con registro INVIMA diseñados para transformar tu bienestar diario.</p>
-            <div class="hero-buttons">
-                <a href="#productos" class="btn-primary">Comprar Ahora</a>
-                <a href="#testimonios" class="btn-secondary">Ver Testimonios</a>
-            </div>
-            <div class="trust-icons-small">
-                <span>✅ Registro Invima</span>
-                <span>🚚 Envío Rápido</span>
-                <span>💵 Pago Contra Entrega</span>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/probioticos.png" alt="Fitovit Probióticos Premium" class="floating-img">
-        </div>
-    </header>
-
-    <section class="trust-bar">
-        <div class="trust-item">
-            <span class="icon">🛡️</span>
-            <h3>Compra Segura</h3>
-            <p>Tus datos están protegidos</p>
-        </div>
-        <div class="trust-item">
-            <span class="icon">📦</span>
-            <h3>Envíos a todo el país</h3>
-            <p>Cobertura nacional garantizada</p>
-        </div>
-        <div class="trust-item">
-            <span class="icon">🤝</span>
-            <h3>Pago Contra Entrega</h3>
-            <p>Paga al recibir tu producto</p>
-        </div>
-    </section>
-
-    <section class="beneficios section">
-        <h2>¿Por qué elegir Fitovit?</h2>
-        <div class="beneficios-grid">
-            <div class="beneficio-card">
-                <div class="icon-circle">⚡</div>
-                <h3>Energía Real</h3>
-                <p>Olvídate de la fatiga. Nuestras fórmulas están optimizadas para darte vitalidad todo el día.</p>
-            </div>
-            <div class="beneficio-card">
-                <div class="icon-circle">🛡️</div>
-                <h3>Defensa Total</h3>
-                <p>Fortalece tu sistema inmune con probióticos de alta concentración y calidad.</p>
-            </div>
-            <div class="beneficio-card">
-                <div class="icon-circle">✨</div>
-                <h3>Belleza Natural</h3>
-                <p>Piel radiante y cabello fuerte gracias a nuestra Biotina con colágeno hidrolizado.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="productos" class="productos section">
-        <h2>Nuestras Ofertas Destacadas</h2>
-        <p class="section-subtitle">Selecciona tu aliado ideal para hoy</p>
+    <div class="portal-container">
         
-        <div class="productos-grid">
-            <div class="producto-card">
-                <div class="badge-offer">¡Más Vendido!</div>
-                <img src="images/probioticos.png" alt="Probióticos Fitovit">
-                <h3>Gomitas Probióticos</h3>
-                <p class="desc">Salud intestinal y defensas al máximo. Delicioso sabor natural.</p>
-                <div class="price-container">
-                    <span class="old-price">$90.000</span>
-                    <span class="new-price">$65.000</span>
+        <h1 class="hero-title">DEFINE TU <br> ESTILO DE VIDA</h1>
+        <p class="hero-subtitle">Dos mundos, una sola calidad. ¿Qué buscas hoy?</p>
+
+        <div class="cards-wrapper">
+            
+            <!-- Health Card -->
+            <a href="health/index.html" class="choice-card card-health">
+                <!-- Using a placeholder gradient image - normally would use a high-res photo -->
+                <div class="card-image-container" style="background-image: linear-gradient(to bottom, transparent, #000), url('images/probioticos.png');"></div>
+                <div class="card-content">
+                    <span class="card-icon">🌿</span>
+                    <h2 class="card-title">Natural</h2>
+                    <p class="card-desc">Suplementos orgánicos, bienestar y equilibrio para tu cuerpo.</p>
+                    <span class="btn-enter">Explorar Salud</span>
                 </div>
-                <button onclick="contactWhatsApp('Probióticos')" class="btn-buy">Pedir por WhatsApp</button>
-            </div>
+            </a>
 
-            <div class="producto-card">
-                <img src="images/biotina.png" alt="Biotina Fitovit">
-                <h3>Biotina + Colágeno</h3>
-                <p class="desc">La fórmula secreta para un cabello largo y uñas inquebrantables.</p>
-                <div class="price-container">
-                    <span class="old-price">$85.000</span>
-                    <span class="new-price">$60.000</span>
+            <!-- Tech Card -->
+            <a href="technology/index.html" class="choice-card card-tech">
+                 <!-- Using a placeholder gradient image -->
+                <div class="card-image-container" style="background-image: linear-gradient(to bottom, transparent, #000), url('https://placehold.co/400x600/001f3f/39CCCC?text=Tech+World');"></div>
+                <div class="card-content">
+                    <span class="card-icon">⚡</span>
+                    <h2 class="card-title">Innovation</h2>
+                    <p class="card-desc">Gadgets de última generación, accesorios y smart tech.</p>
+                    <span class="btn-enter">Explorar Tech</span>
                 </div>
-                <button onclick="contactWhatsApp('Biotina')" class="btn-buy">Pedir por WhatsApp</button>
-            </div>
+            </a>
 
-            <div class="producto-card">
-                <img src="images/magnesio.png" alt="Magnesio Fitovit">
-                <h3>Citrato de Magnesio</h3>
-                <p class="desc">Descanso profundo y recuperación muscular efectiva.</p>
-                <div class="price-container">
-                    <span class="old-price">$80.000</span>
-                    <span class="new-price">$55.000</span>
+            <!-- Mystery Card (Locked) -->
+            <div class="choice-card card-mystery">
+                <div class="badge-soon">Coming Soon</div>
+                <div class="card-image-container"></div>
+                <div class="card-content">
+                    <span class="card-icon">🔒</span>
+                    <h2 class="card-title">Secret</h2>
+                    <p class="card-desc">Una nueva experiencia está en desarrollo.</p>
                 </div>
-                <button onclick="contactWhatsApp('Magnesio')" class="btn-buy">Pedir por WhatsApp</button>
             </div>
-        </div>
-    </section>
 
-    <section id="testimonios" class="testimonios section">
-        <h2>Clientes Felices</h2>
-        <div class="testimonios-container">
-            <div class="testimonio-card">
-                <div class="stars">★★★★★</div>
-                <p>"Llevo 2 semanas tomando los probióticos y mi digestión cambió por completo. ¡Súper recomendados!"</p>
-                <h4>— Ana María P.</h4>
-            </div>
-            <div class="testimonio-card">
-                <div class="stars">★★★★★</div>
-                <p>"El sabor de las gomitas es delicioso, no parece medicina. Mi cabello ha crecido mucho."</p>
-                <h4>— Laura García</h4>
-            </div>
-            <div class="testimonio-card">
-                <div class="stars">★★★★★</div>
-                <p>"El magnesio me ayuda a dormir como un bebé. Excelente servicio y envío rápido."</p>
-                <h4>— Carlos R.</h4>
-            </div>
         </div>
-    </section>
 
-    <section class="faq section">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="faq-container">
-            <details>
-                <summary>¿Tienen registro Invima?</summary>
-                <p>Sí, todos nuestros productos cuentan con registro Invima vigente y cumplen con toda la normativa de salud.</p>
-            </details>
-            <details>
-                <summary>¿Cuánto tarda el envío?</summary>
-                <p>El tiempo de entrega es de 1 a 3 días hábiles en ciudades principales y hasta 5 días en zonas rurales.</p>
-            </details>
-            <details>
-                <summary>¿Cómo puedo pagar?</summary>
-                <p>Manejamos pago contra entrega (pagas al recibir en casa) y transferencias bancarias (Nequi, Daviplata, Bancolombia).</p>
-            </details>
-        </div>
-    </section>
+    </div>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <h3>Fitovit</h3>
-            <p>Tu aliado natural para una vida saludable.</p>
-            <div class="socials">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-            </div>
-        </div>
-        <p class="copy">© 2025 Fitovit. Todos los derechos reservados.</p>
+    <footer class="portal-footer">
+        <p>© 2025 CMC Distribuciones. Todos los derechos reservados.</p>
     </footer>
 
-    <a href="https://wa.me/57313785499" class="whatsapp-float" target="_blank">
-        <img src="images/whatsapp-icon.svg" alt="WhatsApp">
-    </a>
-
-    <script src="script.js"></script>
 </body>
 </html>
