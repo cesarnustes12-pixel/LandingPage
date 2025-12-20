@@ -2,6 +2,9 @@
 
 ## [Sin Publicar]
 
+### Agregado
+- **Catálogo de Salud**: Se actualizaron las imágenes de los productos en `health/index.html` para usar las versiones con fondo blanco (`_white.png`), mejorando la consistencia visual del catálogo.
+
 ### Cambiado
 - **Rebranding General**:
     - Se cambió el nombre de la empresa/portal principal a **"CMC Distribuciones"**.

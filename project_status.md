@@ -1,32 +1,37 @@
 # Project Status: CMC Salud Landing Page
 
-## Current State (2025-12-19)
-- **Framework/Stack:** Vanilla HTML/CSS/JS.
-- **Videos Section:** Completed. 
-    - Layout adjusted for 2 videos.
-    - CSS fixed (`object-fit: cover`) to ensure proper display of video posters and containers.
-    - Placeholder YouTube video removed.
-- **Products Catalog:**
-    - Test/Placeholder products (Omega 3, Vit C Classic) removed.
-    - `Cloruro de Magnesio` and `Gummimas Probióticos` images updated to professional high-quality white background versions.
-    - Global CSS rule added to ensure white backgrounds behind all product images for consistency.
+## Summary
 
-## Pending Tasks (Action Required)
-The following product images still have the "checkerboard" pattern embedded in the PNG files. They need to be regenerated with a pure white background once the image generation quota resets.
+This document tracks the development progress of the CMC Salud landing page.
 
-### Progress Tracking:
-- [x] Cloruro de Magnesio
-- [x] Gummimas Probióticos (Fixed black/checkerboard background)
-- [ ] Melena de León
-- [ ] Gummimas Bisglicinato
-- [ ] Gummimas Citrato + Zinc
-- [ ] PROSHOM
-- [ ] QBS
-- [ ] Ashwagandha
-- [ ] Creatina Monohidratada
+## Work Completed
 
-## Instructions for next session
-1. Use `generate_image` for each pending product using the source images in `../images/`.
-2. Prompt: "Product bottle on a pure white background. Remove any checkerboard pattern. High quality. Professional lighting."
-3. Save the new images as `[name]_white.png` in the `images/` directory.
-4. Update `health/index.html` to point to the new `_white.png` files.
+### General
+- **Framework/Stack:** The project is built using vanilla HTML, CSS, and JavaScript.
+
+### Videos Section
+- The layout has been adjusted to feature two videos.
+- CSS has been fixed to ensure proper video display (`object-fit: cover`).
+- A placeholder YouTube video has been removed.
+
+### Products Catalog
+- Test/placeholder products (Omega 3, Vit C Classic) have been removed from the catalog.
+- An attempt was made to improve product images by switching to versions with white backgrounds (`_white.png` suffix).
+- A global CSS rule was added to display a white background behind all product images for a more consistent look.
+
+## Pending Work
+
+### Image Quality
+- **Critical Issue:** The files named `_white.png` (Melena de León, Bisglicinato, etc.) are "corrupt" in the sense that they were saved with the checkerboard pattern flattened into the image.
+- **Required Action:** Regenerate these assets to ensure a pure white background.
+
+### List of Corrupt/Pending Images:
+- [ ] Melena de León (`melena_de_leon_white.png`)
+- [ ] Gummimas Bisglicinato (`gliscinato_magnesio_white.png`)
+- [ ] Gummimas Citrato + Zinc (`gummimas_citrato_white.png`)
+- [ ] PROSHOM (`proshom_white.png`)
+- [ ] QBS (`qbs_white.png`)
+- [ ] Ashwagandha (`ashwagandha_white.png`)
+- [ ] Creatina Monohidratada (`creatina_white.png`)
+- [ ] Vinagre de Manzana (Pending version)
+- [ ] Colágeno (Pending version)
