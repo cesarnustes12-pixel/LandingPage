@@ -535,6 +535,37 @@ body {
     font-weight: 600;
 }
 
+/* Radio button styling */
+.pricing-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.pricing-option label {
+    display: block;
+    cursor: pointer;
+}
+
+/* Selected state */
+.pricing-option.selected,
+.pricing-option input[type="radio"]:checked + label {
+    border-color: var(--primary-dark);
+    background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
+    box-shadow: 0 8px 25px rgba(30, 70, 53, 0.25);
+}
+
+.pricing-option.selected .pricing-label,
+.pricing-option input[type="radio"]:checked ~ .pricing-label {
+    color: var(--primary-dark);
+}
+
+.pricing-option.selected .pricing-amount,
+.pricing-option input[type="radio"]:checked ~ .pricing-amount {
+    color: var(--primary);
+}
+
+
 /* How to Use */
 .modal-howto {
     background: #f0f8f5;

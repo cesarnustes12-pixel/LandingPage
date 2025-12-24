@@ -38,6 +38,7 @@ function contactWhatsApp(productName) {
 // =============================
 let modalOverlay = null;
 let currentProduct = null;
+let selectedPricingOption = null;
 
 function initializeModal() {
     // Create modal HTML structure
@@ -166,16 +167,32 @@ function openProductModal(productId) {
         }
     ];
 
-    pricingOptions.forEach(option => {
+    pricingOptions.forEach((option, index) => {
+        const optionId = `price-option-${index}`;
+        const isDefault = option.featured; // Combo x2 is default
+
         const optionHTML = `
-            <div class="pricing-option ${option.featured ? 'featured' : ''}">
-                <div class="pricing-label">${option.label}</div>
-                <div class="pricing-amount">$${option.price.toLocaleString('es-CO')}</div>
-                ${option.savings ? `<div class="pricing-savings">Ahorras $${option.savings.toLocaleString('es-CO')}</div>` : ''}
+            <div class="pricing-option ${option.featured ? 'featured' : ''}" onclick="selectPricingOption(${index})" data-option-index="${index}">
+                <input type="radio" 
+                       name="pricing" 
+                       id="${optionId}" 
+                       value="${option.label}"
+                       data-price="${option.price}"
+                       ${isDefault ? 'checked' : ''}
+                       onclick="event.stopPropagation(); selectPricingOption(${index})">
+                <label for="${optionId}" style="cursor: pointer; width: 100%;">
+                    <div class="pricing-label">${option.label}</div>
+                    <div class="pricing-amount">$${option.price.toLocaleString('es-CO')}</div>
+                    ${option.savings ? `<div class="pricing-savings">Ahorras $${option.savings.toLocaleString('es-CO')}</div>` : ''}
+                </label>
             </div>
         `;
         pricingContainer.insertAdjacentHTML('beforeend', optionHTML);
     });
+
+    // Set initial selected option
+    const defaultOption = pricingOptions.find(option => option.featured) || pricingOptions[0];
+    selectedPricingOption = defaultOption;
 
     // Populate benefits
     const benefitsContainer = document.getElementById('modalBenefits');
@@ -208,9 +225,54 @@ function closeModal() {
     }, 300);
 }
 
+function selectPricingOption(index) {
+    // Update visual selection
+    const allOptions = document.querySelectorAll('.pricing-option');
+    allOptions.forEach((opt, i) => {
+        if (i === index) {
+            opt.classList.add('selected');
+            const radio = opt.querySelector('input[type="radio"]');
+            if (radio) radio.checked = true;
+        } else {
+            opt.classList.remove('selected');
+        }
+    });
+
+    // Update selected option data
+    const pricingOptions = [
+        {
+            label: 'Unidad',
+            price: currentProduct.prices.unit
+        },
+        {
+            label: 'Combo x2',
+            price: currentProduct.prices.combo2
+        },
+        {
+            label: 'Combo x3',
+            price: currentProduct.prices.combo3
+        }
+    ];
+
+    selectedPricingOption = pricingOptions[index];
+}
+
 function contactWhatsAppFromModal() {
     if (currentProduct) {
-        contactWhatsApp(currentProduct.name);
+        const phone = "573137774871";
+        let message = `Hola, estoy interesado en: ${currentProduct.name}`;
+
+        // Add selected pricing option if available
+        if (selectedPricingOption) {
+            message += `\n📦 Opción: ${selectedPricingOption.label}`;
+            message += `\n💰 Precio: $${selectedPricingOption.price.toLocaleString('es-CO')}`;
+        }
+
+        message += `\n\n¿Me das más información?`;
+
+        const encodedMessage = encodeURIComponent(message);
+        const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+        window.open(url, '_blank');
     }
 }
 
