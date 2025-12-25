@@ -553,6 +553,11 @@ body {
     box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
 }
 
+.pricing-option:active {
+    transform: translateY(-1px) scale(0.98);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.15);
+}
+
 .pricing-option.featured {
     border-color: var(--accent);
     background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
