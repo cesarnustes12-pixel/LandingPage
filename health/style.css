@@ -248,6 +248,27 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
+.producto-card::after {
+    content: '👆 Clic para más info';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(30, 70, 53, 0.95);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.producto-card:hover::after {
+    opacity: 1;
+}
 .producto-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
@@ -328,6 +349,21 @@ body {
     color: var(--accent);
     text-decoration: none;
     margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.footer a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+.developer-credit {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+.developer-credit a {
+    font-weight: 600;
+    color: var(--accent);
 }
 
 /* --- WhatsApp Float --- */
