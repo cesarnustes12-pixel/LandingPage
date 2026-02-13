@@ -52,7 +52,7 @@
    - Categoría principal: **Tienda de suplementos nutricionales**
    - Categorías adicionales: **Tienda naturista, Tienda de vitaminas**
    - Dirección: Tu dirección en Cali
-   - Teléfono: +57 313 785499
+   - Teléfono: +57 3137774871
    - Sitio web: https://mitiendacmc.com
    - Horario de atención
 
